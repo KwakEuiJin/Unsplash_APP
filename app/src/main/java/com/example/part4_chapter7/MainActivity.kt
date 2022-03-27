@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         val writeExternalStoragePermissionGranted =
             requestCode == REQUEST_WRITE_EXTERNAL_STORAGE
                     && grantResults[0] == PackageManager.PERMISSION_GRANTED
-        if (writeExternalStoragePermissionGranted){
+        if (writeExternalStoragePermissionGranted) {
             fetchRandomPhotos()
         }
 

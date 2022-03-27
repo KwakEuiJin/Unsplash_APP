@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:paddingTop="24dp"
     tools:context=".MainActivity">
 
     <ImageView
         android:layout_width="150dp"
-        android:layout_margin="10dp"
         android:layout_height="50dp"
-        android:src="@drawable/unsplash"
         android:layout_gravity="center"
-        />
+        android:layout_margin="10dp"
+        android:src="@drawable/unsplash" />
 
     <EditText
         android:id="@+id/searchEditText"
@@ -46,8 +46,8 @@
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
                 android:paddingVertical="6dp"
-                tools:listitem="@layout/item_photo"
-                android:visibility="invisible"/>
+                android:visibility="invisible"
+                tools:listitem="@layout/item_photo" />
 
             <TextView
                 android:id="@+id/errorDescriptionTextView"
@@ -66,13 +66,15 @@
                 android:id="@+id/shimmerLayout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <include layout="@layout/view_shimmer_item_photo"/>
-                    <include layout="@layout/view_shimmer_item_photo"/>
+                    <include layout="@layout/view_shimmer_item_photo" />
+
+                    <include layout="@layout/view_shimmer_item_photo" />
 
                 </LinearLayout>
             </com.facebook.shimmer.ShimmerFrameLayout>
