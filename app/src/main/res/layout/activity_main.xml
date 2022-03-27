@@ -7,6 +7,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"
+        android:src="@drawable/unsplash"
+        android:layout_gravity="center"
+        />
+
     <EditText
         android:id="@+id/searchEditText"
         android:layout_width="match_parent"
